@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
 <!-- Pixel Meta / GA4 / Tag Manager: colar aqui -->
-<title>Greg &amp; Costa Planejados</title>
-<meta name="description" content="Móveis planejados em Cuiabá e Várzea Grande, feitos e montados pela família Greg & Costa.">
+<title>GREG Móveis e Soluções</title>
+<meta name="description" content="Móveis planejados, marmoraria, pintura e drywall em Cuiabá e Várzea Grande. Empresa familiar com fabricação própria.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Marcellus&family=Mulish:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
 :root{
-  --noite:#16110E; --carvao:#211A15; --ouro:#D4A62A; --ouro-2:#E8C766; --madeira:#A9764A;
-  --papel:#F4EFE7; --tinta:#2A221C; --cinza:#6E6259; --linha:#DCD2C4; --wa:#1FA855;
-  --display:"Marcellus","Cinzel",Georgia,serif; --marca:"Cinzel",Georgia,serif; --texto:"Mulish",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --noite:#1B1A19; --carvao:#2E2D2B; --ouro:#CC8A62; --ouro-2:#DDA17C; --madeira:#A95F35;
+  --papel:#F2ECE4; --tinta:#2E2D2B; --cinza:#8C8984; --linha:#DDD5CA; --wa:#1FA855;
+  --display:"Montserrat",system-ui,sans-serif; --marca:"Montserrat",system-ui,sans-serif; --texto:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -21,19 +21,19 @@ body{background:var(--papel);color:var(--tinta);font-family:var(--texto);font-si
 img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
-h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:800;letter-spacing:-.01em;line-height:1.1;text-wrap:balance;margin:0}
 h2{font-size:clamp(30px,4.4vw,46px)}
 .eyebrow{font-family:var(--marca);font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--madeira);margin:0 0 14px}
 :focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
 
 /* topo */
-.topo{background:var(--noite);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:20;border-bottom:1px solid #2e241c}
+.topo{background:var(--noite);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:20;border-bottom:1px solid #2e2d2b}
 .topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none}
-.marca img{width:40px;height:40px}
-.marca b{font-family:var(--marca);font-weight:600;font-size:19px;letter-spacing:.06em;display:block;line-height:1}
+.marca img{width:36px;height:auto}
+.marca b{font-family:var(--marca);font-weight:800;font-size:22px;letter-spacing:.03em;display:block;line-height:1}
 .marca b i{font-style:normal;color:var(--ouro)}
-.marca small{font-family:var(--marca);font-size:10px;letter-spacing:.3em;color:#cbbfae}
+.marca small{font-family:var(--marca);font-weight:700;font-size:9.5px;letter-spacing:.2em;color:var(--ouro)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:700;text-decoration:none;padding:15px 26px;font-size:16px;transition:transform .15s ease,background .15s}
 .btn svg{width:20px;height:20px;flex:none}
 .btn-wa{background:var(--wa);color:#fff}
@@ -45,10 +45,10 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 /* hero */
 .hero{background:var(--noite);color:#F4EFE7;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:64px 72px}
-.hero h1{font-size:clamp(40px,6vw,70px);margin-bottom:22px}
+.hero h1{font-size:clamp(36px,5.2vw,62px);margin-bottom:22px}
 .hero h1 em{font-style:normal;color:var(--ouro)}
-.hero p.lead{font-size:19px;color:#d8cdbf;max-width:34ch;margin:0 0 30px}
-.selos{display:flex;flex-wrap:wrap;gap:10px 22px;margin:30px 0 0;padding:0;list-style:none;font-size:14px;color:#cbbfae}
+.hero p.lead{font-size:19px;color:#d6d1ca;max-width:34ch;margin:0 0 30px}
+.selos{display:flex;flex-wrap:wrap;gap:10px 22px;margin:30px 0 0;padding:0;list-style:none;font-size:14px;color:#bdb8b1}
 .selos li{display:flex;align-items:center;gap:8px}
 .selos li::before{content:"";width:8px;height:8px;background:var(--ouro);transform:rotate(45deg)}
 .hero-foto{position:relative}
@@ -57,11 +57,13 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 .hero-foto .ficha b{display:block;font-family:var(--display);font-size:22px;letter-spacing:0;font-weight:400}
 
 /* régua de marceneiro */
-.regua{height:26px;background:
-  repeating-linear-gradient(90deg,var(--tinta) 0 1px,transparent 1px 10px) bottom/100% 7px no-repeat,
-  repeating-linear-gradient(90deg,var(--tinta) 0 1px,transparent 1px 50px) bottom/100% 13px no-repeat,
-  repeating-linear-gradient(90deg,var(--tinta) 0 2px,transparent 2px 100px) bottom/100% 20px no-repeat,
-  var(--ouro);border-block:1px solid #9c7a1c;opacity:.95}
+.regua{height:18px;background:url(madeira.jpg) center/cover}
+.serv{background:var(--papel)}
+.serv .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.serv article{background:#fff;padding:26px 24px;border-radius:3px}
+.serv article i{display:block;width:44px;height:6px;background:url(madeira.jpg) center/cover;margin-bottom:18px}
+.serv h3{font-size:21px;margin-bottom:8px}.serv p{margin:0;color:#5a5754;font-size:15.5px}
+@media (max-width:860px){.serv .grid{grid-template-columns:1fr 1fr}}
 
 section{padding-block:88px}
 /* família */
@@ -69,7 +71,7 @@ section{padding-block:88px}
 .familia .fotos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .familia .fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px}
 .familia .fotos img:last-child{margin-top:48px}
-.familia p{max-width:58ch;color:#4a3f36}
+.familia p{max-width:58ch;color:#4a4744}
 .familia h2{margin-bottom:22px}
 .assina{margin-top:26px;font-family:var(--marca);letter-spacing:.14em;font-size:14px;color:var(--madeira)}
 
@@ -77,11 +79,11 @@ section{padding-block:88px}
 .comp{background:var(--carvao);color:#EFE7DC}
 .comp h2{max-width:20ch;margin-bottom:48px}
 .comp .eyebrow{color:var(--ouro)}
-.grade4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid #3a2f26}
-.grade4 article{padding:28px 26px 8px 0;border-right:1px solid #3a2f26;margin-right:26px}
+.grade4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid #3a3835}
+.grade4 article{padding:28px 26px 8px 0;border-right:1px solid #3a3835;margin-right:26px}
 .grade4 article:last-child{border-right:0;margin-right:0}
 .grade4 h3{font-size:24px;color:#fff;margin:14px 0 10px}
-.grade4 p{margin:0;color:#bfb2a3;font-size:15.5px}
+.grade4 p{margin:0;color:#b3aea7;font-size:15.5px}
 .grade4 .ic{width:34px;height:34px;color:var(--ouro)}
 
 /* projetos */
@@ -90,19 +92,19 @@ section{padding-block:88px}
 .mosaico figure{margin:0;position:relative;overflow:hidden;border-radius:3px;background:#ddd}
 .mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .mosaico figure:hover img{transform:scale(1.03)}
-.mosaico figcaption{position:absolute;left:12px;bottom:12px;background:rgba(22,17,14,.82);color:#fff;font-family:var(--marca);font-size:12px;letter-spacing:.16em;padding:7px 11px;border-radius:2px}
+.mosaico figcaption{position:absolute;left:12px;bottom:12px;background:rgba(27,26,25,.82);color:#fff;font-family:var(--marca);font-size:12px;letter-spacing:.16em;padding:7px 11px;border-radius:2px}
 .m1{grid-column:span 3;grid-row:span 2}.m2{grid-column:span 3;grid-row:span 2}
 .m3{grid-column:span 3;grid-row:span 2}.m4{grid-column:span 3;grid-row:span 2}
 
 /* processo */
-.proc{background:#EAE2D6}
+.proc{background:#E9E2D8}
 .proc .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
 .proc img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px;position:sticky;top:96px}
 .passos{list-style:none;margin:30px 0 0;padding:0;counter-reset:p}
 .passos li{counter-increment:p;display:grid;grid-template-columns:64px 1fr;gap:6px 18px;padding:22px 0;border-top:1px solid var(--linha)}
 .passos li::before{content:counter(p);font-family:var(--display);font-size:40px;line-height:1;color:var(--madeira);grid-row:span 2}
 .passos h3{font-size:23px}
-.passos p{margin:0;color:#5a4e44;font-size:16px}
+.passos p{margin:0;color:#5a5754;font-size:16px}
 
 /* perguntas */
 .faq .wrap{max-width:820px}
@@ -113,16 +115,16 @@ summary{cursor:pointer;font-family:var(--display);font-size:22px;list-style:none
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";color:var(--madeira);font-size:26px;line-height:1}
 details[open] summary::after{content:"–"}
-details p{margin:12px 0 0;color:#5a4e44;max-width:62ch}
+details p{margin:12px 0 0;color:#5a5754;max-width:62ch}
 
 /* final */
 .final{background:var(--noite);color:#F4EFE7;text-align:center}
 .final h2{max-width:18ch;margin:0 auto 18px}
-.final p{color:#cbbfae;margin:0 auto 30px;max-width:44ch}
-.final .gc{width:64px;margin:0 auto 26px}
-footer{background:#0f0b09;color:#9c8f82;font-size:14px}
+.final p{color:#bdb8b1;margin:0 auto 30px;max-width:44ch}
+.final .gc{width:72px;height:auto;margin:0 auto 26px}
+footer{background:#141312;color:#8C8984;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:26px}
-footer a{color:#d8cdbf;text-decoration:none}
+footer a{color:#d6d1ca;text-decoration:none}
 
 .flutua{display:none}
 @media (max-width:860px){
@@ -130,7 +132,7 @@ footer a{color:#d8cdbf;text-decoration:none}
   .hero .wrap{padding-block:40px 56px}
   .hero-foto .ficha{left:12px;bottom:12px}
   .grade4{grid-template-columns:1fr 1fr}
-  .grade4 article{border-right:0;margin-right:0;padding-right:12px;border-bottom:1px solid #3a2f26;padding-bottom:24px}
+  .grade4 article{border-right:0;margin-right:0;padding-right:12px;border-bottom:1px solid #3a3835;padding-bottom:24px}
   .mosaico{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
   .m1,.m2{grid-column:span 2;grid-row:span 2}.m3,.m4{grid-column:span 1;grid-row:span 2}
   .proc img{position:static;aspect-ratio:4/3}
@@ -150,9 +152,9 @@ footer a{color:#d8cdbf;text-decoration:none}
 
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="#inicio" aria-label="Greg & Costa Móveis Planejados">
-      <img src="logo.svg" alt="">
-      <span><b>GREG<i>&amp;</i>COSTA</b><small>MÓVEIS PLANEJADOS</small></span>
+    <a class="marca" href="#inicio" aria-label="GREG Móveis e Soluções">
+      <img src="greg-simbolo.png" alt="">
+      <span><b>GREG</b><small>MÓVEIS E SOLUÇÕES</small></span>
     </a>
     <a class="btn btn-wa btn-sm" data-origem="site_topo" href="#">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
@@ -165,9 +167,9 @@ footer a{color:#d8cdbf;text-decoration:none}
   <section class="hero" style="padding-block:0">
     <div class="wrap">
       <div>
-        <p class="eyebrow" style="color:var(--ouro)">Móveis planejados · Cuiabá e Várzea Grande</p>
+        <p class="eyebrow" style="color:var(--ouro)">Cuiabá e Várzea Grande</p>
         <h1>Da nossa família <em>para a sua.</em></h1>
-        <p class="lead">Projetos sob medida com acabamento rigoroso, materiais selecionados e o cuidado de quem trata cada casa como única.</p>
+        <p class="lead">Móveis planejados, marmoraria, pintura e drywall com acabamento rigoroso e o cuidado de quem trata cada casa como única.</p>
         <a class="btn btn-wa" data-origem="site_hero" href="#">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
           Solicitar orçamento
@@ -179,7 +181,7 @@ footer a{color:#d8cdbf;text-decoration:none}
         </ul>
       </div>
       <div class="hero-foto">
-        <img src="casal.jpg" alt="Deivid e a esposa na fábrica da Greg & Costa, com uniforme da empresa">
+        <img src="casal.jpg" alt="Deivid e a esposa na fábrica da GREG, com uniforme da empresa">
         <div class="ficha">FABRICAÇÃO PRÓPRIA<b>do projeto à entrega</b></div>
       </div>
     </div>
@@ -190,16 +192,29 @@ footer a{color:#d8cdbf;text-decoration:none}
   <section class="familia">
     <div class="wrap">
       <div class="fotos">
-        <img src="equipe.jpg" alt="Equipe Greg & Costa montando armários">
-        <img src="obra.jpg" alt="Família Greg & Costa instalando ripado em obra">
+        <img src="equipe.jpg" alt="Equipe GREG montando armários">
+        <img src="obra.jpg" alt="Família GREG instalando ripado em obra">
       </div>
       <div>
         <p class="eyebrow">Nossa história</p>
         <h2>Uma empresa familiar, construída sobre relações de confiança.</h2>
-        <p>A Greg &amp; Costa nasceu do trabalho em família e cresceu pela indicação de clientes satisfeitos. Cada projeto é acompanhado de perto, da primeira conversa à entrega final.</p>
+        <p>A GREG nasceu do trabalho em família e cresceu pela indicação de clientes satisfeitos. Cada projeto é acompanhado de perto, da primeira conversa à entrega final.</p>
         <p>Durante a instalação, o ambiente do cliente recebe o mesmo respeito que dedicamos ao nosso próprio lar: organização, proteção e limpeza em todas as etapas.</p>
         <p>A especificação de materiais prioriza a durabilidade. Sempre que o projeto permite, são adotadas soluções superiores às previstas em orçamento.</p>
-        <p class="assina">FAMÍLIA GREG &amp; COSTA</p>
+        <p class="assina">FAMÍLIA GREG</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="serv">
+    <div class="wrap">
+      <p class="eyebrow">Soluções completas</p>
+      <h2>Da estrutura ao acabamento.</h2>
+      <div class="grid">
+        <article><i></i><h3>Móveis planejados</h3><p>Cozinhas, dormitórios, salas e ambientes comerciais sob medida.</p></article>
+        <article><i></i><h3>Marmoraria</h3><p>Bancadas, soleiras e peças em mármore e granito.</p></article>
+        <article><i></i><h3>Pintura</h3><p>Preparação e acabamento de paredes e tetos.</p></article>
+        <article><i></i><h3>Drywall</h3><p>Paredes, forros e sancas com instalação completa.</p></article>
       </div>
     </div>
   </section>
@@ -248,7 +263,7 @@ footer a{color:#d8cdbf;text-decoration:none}
 
   <section class="proc">
     <div class="wrap">
-      <img src="escritorio.jpg" alt="Deivid apresentando projeto 3D no escritório da Greg & Costa">
+      <img src="escritorio.jpg" alt="Deivid apresentando projeto 3D no escritório da GREG">
       <div>
         <p class="eyebrow">Como funciona</p>
         <h2>Do projeto à entrega.</h2>
@@ -268,7 +283,7 @@ footer a{color:#d8cdbf;text-decoration:none}
       <p class="eyebrow">Perguntas</p>
       <h2>Perguntas frequentes</h2>
       <details><summary>Quais cidades vocês atendem?</summary><p>Cuiabá e Várzea Grande, em casa, apartamento e ponto comercial.</p></details>
-      <details><summary>A instalação é terceirizada?</summary><p>Não. A instalação é realizada pela equipe própria da Greg &amp; Costa.</p></details>
+      <details><summary>A instalação é terceirizada?</summary><p>Não. A instalação é realizada pela equipe própria da GREG.</p></details>
       <details><summary>Dá para ver o projeto antes?</summary><p>Sim. Todo ambiente é apresentado em 3D antes da fabricação, com ajustes até ficar do jeito certo.</p></details>
       <details><summary>Como solicitar um orçamento?</summary><p>Pelo WhatsApp, com os ambientes desejados e, se houver, fotos e planta do imóvel. A visita técnica é agendada no mesmo atendimento.</p></details>
     </div>
@@ -276,7 +291,7 @@ footer a{color:#d8cdbf;text-decoration:none}
 
   <section class="final">
     <div class="wrap">
-      <img class="gc" src="logo.svg" alt="">
+      <img class="gc" src="greg-simbolo.png" alt="">
       <h2>Vamos planejar o seu próximo ambiente?</h2>
       <p>Atendimento personalizado em Cuiabá e Várzea Grande.</p>
       <a class="btn btn-ouro" data-origem="site_final" href="#">Solicitar orçamento</a>
@@ -286,7 +301,7 @@ footer a{color:#d8cdbf;text-decoration:none}
 
 <footer>
   <div class="wrap">
-    <span>Greg &amp; Costa Móveis Planejados · Cuiabá e Várzea Grande · MT</span>
+    <span>GREG Móveis e Soluções · Cuiabá e Várzea Grande · MT</span>
     <span><a data-origem="site_rodape" href="#">(65) 9358-0146</a> · <a href="https://www.instagram.com/greg_e_greg_/" target="_blank" rel="noopener">Instagram</a></span>
   </div>
 </footer>
@@ -296,7 +311,7 @@ footer a{color:#d8cdbf;text-decoration:none}
 <script>
 (function(){
   var FONE='556593580146';
-  var MSG='Olá! Vim pelo site da Greg & Costa e quero um orçamento de móveis planejados.';
+  var MSG='Olá! Vim pelo site da GREG e quero um orçamento.';
   var p=new URLSearchParams(location.search);
   var fonte=p.get('utm_source')||'direto';
   document.querySelectorAll('[data-origem]').forEach(function(a){
