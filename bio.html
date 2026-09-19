@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<!-- Pixel Meta / GA4 / Tag Manager: colar aqui -->
+<title>Greg &amp; Costa Bio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Marcellus&family=Mulish:wght@400;600;700&display=swap">
+<style>
+:root{--noite:#16110E;--carvao:#221B16;--ouro:#D4A62A;--ouro-2:#E8C766;--papel:#F4EFE7;--sub:#bdb0a1;--linha:#3a2f26;--wa:#1FA855}
+*{box-sizing:border-box}
+html,body{min-height:100%}
+body{margin:0;background:var(--noite);color:var(--papel);font-family:"Mulish",system-ui,-apple-system,"Segoe UI",sans-serif;padding-inline:16px;
+  background-image:radial-gradient(120% 60% at 50% 0%,#2b2119 0%,var(--noite) 60%)}
+.card{max-width:440px;margin:0 auto;padding-block:44px 40px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.gc{width:74px;height:74px}
+.nome{font-family:"Cinzel",Georgia,serif;font-weight:600;font-size:28px;letter-spacing:.06em;margin:18px 0 2px;line-height:1}
+.nome i{font-style:normal;color:var(--ouro)}
+.cat{font-family:"Cinzel",Georgia,serif;font-size:11px;letter-spacing:.34em;color:var(--sub);margin:6px 0 18px}
+.frase{font-family:"Marcellus",Georgia,serif;font-size:21px;line-height:1.3;margin:0 0 6px;text-wrap:balance}
+.local{font-size:14px;color:var(--sub);margin:0 0 26px}
+.fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%;margin-bottom:26px}
+.fotos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px;display:block}
+.links{display:flex;flex-direction:column;gap:12px;width:100%}
+.b{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16px;border:1px solid var(--linha);color:var(--papel);background:var(--carvao);transition:background .15s,border-color .15s}
+.b:hover{border-color:var(--ouro)}
+.b svg{width:20px;height:20px;flex:none}
+.b.wa{background:var(--wa);border-color:var(--wa);color:#fff;font-size:17px}
+.b.wa:hover{background:#18924a}
+.b.ouro{background:transparent;border-color:var(--ouro);color:var(--ouro-2)}
+:focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
+.regua{width:100%;height:14px;margin:30px 0 16px;opacity:.55;background:
+  repeating-linear-gradient(90deg,var(--ouro) 0 1px,transparent 1px 8px) bottom/100% 5px no-repeat,
+  repeating-linear-gradient(90deg,var(--ouro) 0 1px,transparent 1px 40px) bottom/100% 12px no-repeat}
+.rod{font-size:12px;letter-spacing:.14em;color:#8d8074;font-family:"Cinzel",Georgia,serif}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img class="gc" src="logo.svg" alt="Greg & Costa">
+  <h1 class="nome">GREG<i>&amp;</i>COSTA</h1>
+  <p class="cat">MÓVEIS PLANEJADOS</p>
+  <p class="frase">Família que cuida da casa de outras famílias.</p>
+  <p class="local">Cuiabá e Várzea Grande · MT</p>
+
+  <div class="fotos">
+    <img src="ripado.jpg" alt="Sala com painel ripado e LED">
+    <img src="cozinha.jpg" alt="Cozinha planejada grafite">
+    <img src="canto.jpg" alt="Canto alemão com ripado">
+  </div>
+
+  <nav class="links" aria-label="Contato e links">
+    <a class="b wa" data-wa="bio_orcamento" href="#">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+      Orçamento no WhatsApp
+    </a>
+    <a class="b ouro" data-link="bio_site" href="./?utm_source=instagram&amp;utm_medium=bio">Conheça a Greg &amp; Costa</a>
+    <a class="b" data-wa="bio_visita" href="#">Agendar visita e medição</a>
+    <a class="b" data-link="bio_instagram" href="https://www.instagram.com/greg_e_greg_/" target="_blank" rel="noopener">Projetos no Instagram</a>
+  </nav>
+
+  <div class="regua" aria-hidden="true"></div>
+  <p class="rod">(65) 99290-2284</p>
+</div>
+
+<script>
+(function(){
+  var FONE='5565992902284';
+  var MSGS={
+    bio_orcamento:'Olá! Vim pelo Instagram e quero um orçamento de móveis planejados.',
+    bio_visita:'Olá! Vim pelo Instagram e quero agendar uma visita para medição.'
+  };
+  function track(o){
+    try{(window.dataLayer=window.dataLayer||[]).push({event:o.indexOf('orcamento')>-1||o.indexOf('visita')>-1?'click_whatsapp':'click_link',origem:o,fonte:'instagram_bio'});}catch(e){}
+    try{if(window.fbq&&MSGS[o])fbq('track','Contact',{content_name:o});}catch(e){}
+  }
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    var o=a.getAttribute('data-wa');
+    a.href='https://wa.me/'+FONE+'?text='+encodeURIComponent(MSGS[o]);
+    a.target='_blank';a.rel='noopener';
+    a.addEventListener('click',function(){track(o)});
+  });
+  document.querySelectorAll('[data-link]').forEach(function(a){
+    a.addEventListener('click',function(){track(a.getAttribute('data-link'))});
+  });
+})();
+</script>
+
+</body>
+</html>
