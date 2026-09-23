@@ -27,42 +27,39 @@ body{margin:0;background:var(--carvao);color:var(--areia);font-family:"Manrope",
 .dif li{padding:16px 6px;display:flex;flex-direction:column;align-items:center;gap:8px}
 .dif li+li{border-left:1px solid var(--linha)}
 .dif svg{width:22px;height:22px;color:var(--cobre)}
-.dif b{font-family:"Montserrat",system-ui,sans-serif;font-weight:700;font-size:12.5px;line-height:1.3;letter-spacing:.01em}
-.dif b span{display:block;font-size:21px;font-weight:800;color:var(--cobre);letter-spacing:-.01em;line-height:1.05}
+.dif b{font-family:"Montserrat",system-ui,sans-serif;font-weight:700;font-size:13px;line-height:1.35;letter-spacing:.01em}
 
 .b{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;padding:0 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:17px;color:#fff;transition:transform .15s,box-shadow .15s,filter .15s}
-.b svg{width:21px;height:21px;flex:none;filter:drop-shadow(0 1px 0 rgba(0,0,0,.25))}
-.b.wa{background:linear-gradient(180deg,#2BBF66 0%,#1FA855 55%,#178F47 100%);border:1px solid #14803F;text-shadow:0 1px 0 rgba(0,0,0,.25);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.18),0 2px 0 #0f6a33,0 10px 22px -10px rgba(31,168,85,.7)}
+.b svg{width:21px;height:21px;flex:none}
+.b.wa{background:linear-gradient(180deg,#DDA07A 0%,var(--cobre) 50%,#B8744B 100%);border:1px solid #8E4E2A;color:var(--carvao);
+  box-shadow:inset 0 1px 0 rgba(255,240,225,.55),inset 0 -2px 0 rgba(90,40,15,.25),0 2px 0 #6E3A1D,0 10px 22px -10px rgba(204,138,98,.65)}
 .b.wa:hover{filter:brightness(1.05)}
-.b.wa:active{transform:translateY(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -1px 0 rgba(0,0,0,.18),0 0 0 #0f6a33,0 4px 12px -8px rgba(31,168,85,.7)}
+.b.wa:active{transform:translateY(2px);box-shadow:inset 0 1px 0 rgba(255,240,225,.4),inset 0 -1px 0 rgba(90,40,15,.25),0 0 0 #6E3A1D,0 4px 12px -8px rgba(204,138,98,.65)}
 
-.gmn{margin:16px 0 0;width:100%;display:flex;align-items:center;gap:14px;padding:14px 16px;border:1px solid #3f3c38;border-radius:14px;background:linear-gradient(180deg,#343230 0%,var(--grafite) 60%,#272624 100%);text-decoration:none;color:var(--areia);text-align:left;transition:border-color .15s,transform .15s;
+.duo{margin:16px 0 0;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{display:flex;align-items:center;gap:11px;padding:13px 12px;border:1px solid #3f3c38;border-radius:14px;background:linear-gradient(180deg,#343230 0%,var(--grafite) 60%,#272624 100%);text-decoration:none;color:var(--areia);text-align:left;transition:border-color .15s,transform .15s;
   box-shadow:inset 0 1px 0 rgba(242,236,228,.08),inset 0 -2px 0 rgba(0,0,0,.25),0 2px 0 #141312,0 10px 20px -12px rgba(0,0,0,.8)}
-.gmn:hover{border-color:var(--cobre-esc)}
-.gmn:active{transform:translateY(2px)}
-.gmn .g{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none;border:1px solid var(--cobre-esc);background:linear-gradient(180deg,#2b2927,#1f1e1c);box-shadow:inset 0 1px 0 rgba(242,236,228,.08)}
-.gmn .g svg{width:20px;height:20px;color:var(--cobre)}
-.gmn .t{flex:1;min-width:0}
-.gmn .n{display:flex;align-items:baseline;gap:8px;font-family:"Montserrat",system-ui,sans-serif;font-weight:800;font-size:20px;line-height:1}
-.gmn .st{color:var(--cobre);font-size:15px;letter-spacing:2px}
-.gmn .l{display:block;font-size:13px;color:var(--concreto);margin-top:5px}
-.gmn .seta{width:18px;height:18px;color:var(--concreto);flex:none}
+.tile:hover{border-color:var(--cobre-esc)}
+.tile:active{transform:translateY(2px)}
+.tile .ic{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;flex:none;border:1px solid var(--cobre-esc);background:linear-gradient(180deg,#2b2927,#1f1e1c);box-shadow:inset 0 1px 0 rgba(242,236,228,.08)}
+.tile .ic svg{width:19px;height:19px;color:var(--cobre)}
+.tile .t{min-width:0;display:flex;flex-direction:column;gap:5px}
+.tile .n{font-family:"Montserrat",system-ui,sans-serif;font-weight:800;font-size:15px;line-height:1;white-space:nowrap}
+.tile .l{font-size:12.5px;color:var(--cobre);line-height:1;letter-spacing:1.5px}
+.tile .l.tx{letter-spacing:0;color:var(--concreto)}
 
 .fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;width:100%;margin:26px 0}
 .fotos img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;display:block}
 
-.texto{font-size:15px;line-height:1.65;color:#d9d2c8;margin:0;text-wrap:pretty}
-
-.comp{width:100%;margin-top:30px}
-.comp h2{font-family:"Montserrat",system-ui,sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--concreto);margin:0 0 12px}
-.comp ul{list-style:none;padding:0;margin:0;display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
-.comp li{font-size:14px;font-weight:600;padding:8px 16px;border:1px solid #3f3c38;border-radius:999px;color:var(--areia);background:linear-gradient(180deg,#312f2d,#262523);box-shadow:inset 0 1px 0 rgba(242,236,228,.07),0 1px 0 #141312}
+.top{list-style:none;padding:0;margin:0;width:100%;text-align:left;border-top:1px solid var(--linha)}
+.top li{position:relative;padding:13px 4px 13px 28px;border-bottom:1px solid var(--linha);font-size:15px;line-height:1.45;color:#ddd6cc}
+.top li:before{content:"";position:absolute;left:6px;top:19px;width:7px;height:7px;border:1.6px solid var(--cobre);transform:rotate(45deg)}
+.top b{color:var(--areia);font-weight:700}
 
 .regua{width:100%;height:8px;margin:32px 0 16px;border-radius:2px;background:linear-gradient(90deg,var(--madeira),var(--cobre),var(--cobre-esc));background:url(madeira.jpg) center/cover,linear-gradient(90deg,var(--madeira),var(--cobre))}
 .rod{font-family:"Montserrat",system-ui,sans-serif;font-weight:600;font-size:13px;letter-spacing:.12em;color:var(--concreto);margin:0;line-height:1.8}
 :focus-visible{outline:3px solid var(--cobre);outline-offset:3px}
-@media (max-width:360px){.dif b{font-size:11.5px}.dif b span{font-size:18px}}
+@media (max-width:360px){.dif b{font-size:11.5px}.tile{padding:12px 10px;gap:9px}.tile .ic{width:34px;height:34px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -77,16 +74,16 @@ body{margin:0;background:var(--carvao);color:var(--areia);font-family:"Manrope",
 
   <ul class="dif">
     <li>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
-      <b><span>+15</span>anos no mercado</b>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+      <b>+15 anos<br>no mercado</b>
     </li>
     <li>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg>
-      <b>Do projeto à instalação</b>
+      <b>Do projeto<br>à instalação</b>
     </li>
     <li>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-      <b>Atendimento em todo MT</b>
+      <b>Atendimento<br>em todo MT</b>
     </li>
   </ul>
 
@@ -95,14 +92,16 @@ body{margin:0;background:var(--carvao);color:var(--areia);font-family:"Manrope",
     Orçamento no WhatsApp
   </a>
 
-  <a class="gmn" data-link="bio_google" href="https://www.google.com/maps?cid=18060476366930608238" target="_blank" rel="noopener">
-    <span class="g"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zm-5.6-8a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.7 9.4 5.9 12 5.9z"/></svg></span>
-    <span class="t">
-      <span class="n">5,0 <span class="st" aria-label="5 de 5 estrelas">★★★★★</span></span>
-      <span class="l">Avaliações no Google</span>
-    </span>
-    <svg class="seta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
-  </a>
+  <div class="duo">
+    <a class="tile" data-link="bio_google" href="https://www.google.com/maps?cid=18060476366930608238" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.4zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zm-5.6-8a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.7 9.4 5.9 12 5.9z"/></svg></span>
+      <span class="t"><span class="n">5,0</span><span class="l" aria-label="5 de 5 estrelas no Google">★★★★★</span></span>
+    </a>
+    <a class="tile" data-link="bio_rota" href="https://www.google.com/maps/dir/?api=1&amp;destination=Avenida%20Brasil%2C%2015%20-%20Recanto%20do%20Sol%2C%20Cuiab%C3%A1%20-%20MT%2C%2078089-005" target="_blank" rel="noopener">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+      <span class="t"><span class="n">Como chegar</span><span class="l tx">Recanto do Sol</span></span>
+    </a>
+  </div>
 
   <div class="fotos">
     <img src="ripado.jpg" alt="Sala com painel ripado e LED" loading="lazy">
@@ -110,16 +109,12 @@ body{margin:0;background:var(--carvao);color:var(--areia);font-family:"Manrope",
     <img src="canto.jpg" alt="Canto alemão com ripado" loading="lazy">
   </div>
 
-  <p class="texto">Há mais de 15 anos a GREG - Móveis projeta, fabrica e instala móveis planejados com equipe própria. Cada ambiente é medido no local e cada peça é conferida antes da entrega. Cozinhas, dormitórios, closets, home office e áreas gourmet feitos sob medida para a rotina de cada família.</p>
-
-  <section class="comp">
-    <h2>Complementos da obra</h2>
-    <ul>
-      <li>Marmoraria</li>
-      <li>Pintura</li>
-      <li>Drywall</li>
-    </ul>
-  </section>
+  <ul class="top">
+    <li><b>Projeto, fabricação e instalação</b> com equipe própria</li>
+    <li><b>Medição no local</b> e conferência peça por peça antes da entrega</li>
+    <li><b>Cozinha, dormitório, closet,</b> home office e área gourmet</li>
+    <li><b>Marmoraria, pintura e drywall:</b> serviços que completam o projeto</li>
+  </ul>
 
   <div class="regua" aria-hidden="true"></div>
   <p class="rod">(65) 99290-2284<br>@gregmoveis.mt</p>
