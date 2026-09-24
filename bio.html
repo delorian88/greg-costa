@@ -6,7 +6,13 @@
 <meta name="theme-color" content="#1B1A19">
 <meta name="description" content="GREG - Móveis · móveis planejados sob medida em Cuiabá e todo Mato Grosso. Mais de 15 anos, do projeto à instalação.">
 <link rel="icon" href="favicon.png" type="image/png">
-<!-- Pixel Meta / GA4 / Tag Manager: colar aqui -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNZQSFR2');</script>
+<!-- End Google Tag Manager -->
 <title>GREG - Móveis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,6 +70,10 @@ body{margin:0;background:var(--carvao);color:var(--areia);font-family:"Manrope",
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNZQSFR2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <main class="pg">
   <h1 class="sr">GREG - Móveis</h1>
@@ -129,7 +139,6 @@ body{margin:0;background:var(--carvao);color:var(--areia);font-family:"Manrope",
   function track(o){
     var wa=!!MSGS[o];
     try{(window.dataLayer=window.dataLayer||[]).push({event:wa?'click_whatsapp':'click_link',origem:o,fonte:'instagram_bio'});}catch(e){}
-    try{if(wa&&window.fbq)fbq('track','Contact',{content_name:o});}catch(e){}
   }
   document.querySelectorAll('[data-wa]').forEach(function(a){
     var o=a.getAttribute('data-wa');

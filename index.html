@@ -4,7 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <link rel="icon" href="favicon.png" type="image/png">
-<!-- Pixel Meta / GA4 / Tag Manager: colar aqui -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNZQSFR2');</script>
+<!-- End Google Tag Manager -->
 <title>GREG Móveis</title>
 <meta name="description" content="Móveis planejados, marmoraria, pintura e drywall em Cuiabá e Várzea Grande. Empresa familiar com fabricação própria.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,6 +155,10 @@ footer a{color:#d6d1ca;text-decoration:none}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNZQSFR2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header class="topo">
   <div class="wrap">
@@ -320,7 +330,6 @@ footer a{color:#d6d1ca;text-decoration:none}
     a.addEventListener('click',function(){
       var o=a.getAttribute('data-origem');
       try{(window.dataLayer=window.dataLayer||[]).push({event:'click_whatsapp',origem:o,fonte:fonte});}catch(e){}
-      try{if(window.fbq)fbq('track','Contact',{content_name:o});}catch(e){}
       try{if(window.gtag)gtag('event','click_whatsapp',{origem:o,fonte:fonte});}catch(e){}
     });
   });
