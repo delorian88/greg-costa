@@ -1,9 +1,10 @@
 /* app.js · GREG - Móveis · gregmoveis.com.br e /bio
  * Substitui o bloco <script> inline do fim do bio.html e do index.html.
- * Incluir antes de </body>:  <script src="/app.js" defer></script>
+ * Incluir antes de </body>:  <script src="/app.js" defer></script> (arquivo na raiz do repositório)
  * - lê gclid / fbclid / UTMs da URL e o cookie _fbp; guarda 90 dias (primeiro toque vence)
  * - ping de visita ao coletor
  * - no clique em [data-wa] ou [data-origem]: gera código #G-XXXXX, ping de evento, abre o WhatsApp com a mensagem
+ * - parâmetro do código chama-se "cod" (o nome "c" é reservado pelo Apps Script e derruba a URL)
  * - Pixel e GA4 continuam pelo GTM (dataLayer.push click_whatsapp mantido)
  */
 (function () {
@@ -71,7 +72,7 @@
       var texto = msg + ' (#' + cod + ')';
       a.href = 'https://wa.me/' + CONFIG.fone + '?text=' + encodeURIComponent(texto);
       try { (window.dataLayer = window.dataLayer || []).push({ event: 'click_whatsapp', origem: chave, fonte: fonte(), codigo: cod }); } catch (e) {}
-      ping({ t: 'evento', n: 'click_whatsapp', c: cod });
+      ping({ t: 'evento', n: 'click_whatsapp', cod: cod });
     });
   }
 
