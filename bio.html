@@ -130,27 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="rod">(65) 99290-2284<br>@gregmoveis.mt</p>
 </main>
 
-<script>
-(function(){
-  var FONE='5565992902284';
-  var MSGS={
-    bio_orcamento:'Olá! Vim pelo Instagram e quero um orçamento de móveis planejados.'
-  };
-  function track(o){
-    var wa=!!MSGS[o];
-    try{(window.dataLayer=window.dataLayer||[]).push({event:wa?'click_whatsapp':'click_link',origem:o,fonte:'instagram_bio'});}catch(e){}
-  }
-  document.querySelectorAll('[data-wa]').forEach(function(a){
-    var o=a.getAttribute('data-wa');
-    a.href='https://wa.me/'+FONE+'?text='+encodeURIComponent(MSGS[o]);
-    a.target='_blank';a.rel='noopener';
-    a.addEventListener('click',function(){track(o)});
-  });
-  document.querySelectorAll('[data-link]').forEach(function(a){
-    a.addEventListener('click',function(){track(a.getAttribute('data-link'))});
-  });
-})();
-</script>
+<script src="/app.js" defer></script>
 
 </body>
 </html>

@@ -318,23 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <a class="btn btn-wa flutua" data-origem="site_flutuante" href="#">Solicitar orçamento</a>
 
-<script>
-(function(){
-  var FONE='5565992902284';
-  var MSG='Olá! Vim pelo site da GREG e quero um orçamento.';
-  var p=new URLSearchParams(location.search);
-  var fonte=p.get('utm_source')||'direto';
-  document.querySelectorAll('[data-origem]').forEach(function(a){
-    a.href='https://wa.me/'+FONE+'?text='+encodeURIComponent(MSG);
-    a.target='_blank';a.rel='noopener';
-    a.addEventListener('click',function(){
-      var o=a.getAttribute('data-origem');
-      try{(window.dataLayer=window.dataLayer||[]).push({event:'click_whatsapp',origem:o,fonte:fonte});}catch(e){}
-      try{if(window.gtag)gtag('event','click_whatsapp',{origem:o,fonte:fonte});}catch(e){}
-    });
-  });
-})();
-</script>
+<script src="/app.js" defer></script>
 
 </body>
 </html>
