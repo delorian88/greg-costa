@@ -61,6 +61,7 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 .selos li::before{content:"";width:8px;height:8px;background:var(--ouro);transform:rotate(45deg)}
 .hero-foto{position:relative}
 .hero-foto{padding:10px 6px 0}
+.moldura{position:relative}
 .hero-foto .proj{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:10px solid #F7F3EE;border-bottom-width:34px;border-radius:2px;transform:rotate(1.5deg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
 .hero-foto .dono{position:absolute;right:-34px;bottom:-26px;width:34%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 28%;border:7px solid #F7F3EE;border-bottom-width:22px;border-radius:2px;transform:rotate(-5deg);box-shadow:0 16px 36px rgba(0,0,0,.55)}
 .hero-foto .ficha{position:absolute;left:-28px;bottom:28px;background:var(--papel);color:var(--tinta);padding:14px 18px;border-radius:3px;font-family:var(--marca);font-size:13px;letter-spacing:.12em;box-shadow:0 12px 30px rgba(0,0,0,.35)}
@@ -184,6 +185,22 @@ footer a{color:#d6d1ca;text-decoration:none}
   .eyebrow{font-size:12px;letter-spacing:.18em}
 }
 @media (max-width:360px){.escala .grid{grid-template-columns:1fr}}
+@media (max-width:480px){
+  .topo .wrap{padding-block:8px}
+  .hero .wrap{padding-block:14px 30px;gap:18px}
+  .hero .eyebrow{margin-bottom:8px}
+  .hero h1{font-size:30px;margin-bottom:8px}
+  .hero p.lead{font-size:15px;line-height:1.48;margin-bottom:14px}
+  .hero .btn{padding:13px 22px;font-size:15.5px}
+  .selos{margin-top:12px;gap:4px 14px;font-size:12.5px}
+  .selos li{gap:6px}.selos li::before{width:6px;height:6px}
+  .hero{display:flex}
+  .hero .wrap{display:flex;flex-direction:column;width:100%;min-height:calc(100svh - 61px)}
+  .hero-foto{flex:1 1 0;min-height:230px;max-width:none;margin:0;padding:4px 0 0;display:flex;justify-content:center}
+  .moldura{height:100%;aspect-ratio:4/5.2;max-width:100%}
+  .hero-foto .proj{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border-width:6px;border-bottom-width:18px}
+  .hero-foto .dono{width:46%;right:-30%;bottom:-6px;border-width:4px;border-bottom-width:12px}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -218,14 +235,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Solicitar orçamento
         </a>
         <ul class="selos">
-          <li>Mais de 15 anos em Cuiabá</li>
-          <li>Projeto 3D antes da produção</li>
-          <li>Fabricação e instalação próprias</li>
+          <li>+15 anos em Cuiabá</li>
+          <li>Projeto 3D</li>
+          <li>Equipe própria</li>
         </ul>
       </div>
       <div class="hero-foto">
-        <img class="proj" src="hero-roupeiro.jpg" alt="Roupeiro planejado branco com portas em palhinha" width="1040" height="1300" fetchpriority="high" decoding="async">
-        <img class="dono" src="casal.jpg" alt="Deivid e a esposa, donos da GREG - Móveis" width="600" height="600" decoding="async">
+<div class="moldura">
+                  <img class="proj" src="hero-roupeiro.jpg" alt="Roupeiro planejado branco com portas em palhinha" width="1280" height="1600" fetchpriority="high" decoding="async">
+          <img class="dono" src="casal.jpg" alt="Deivid e a esposa, donos da GREG - Móveis" width="600" height="600" decoding="async">
+        </div>
       </div>
     </div>
   </section>
