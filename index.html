@@ -63,7 +63,8 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 .hero-foto{padding:10px 6px 0}
 .moldura{position:relative}
 .hero-foto .proj{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:10px solid #F7F3EE;border-bottom-width:34px;border-radius:2px;transform:rotate(1.5deg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
-.hero-foto .dono{position:absolute;right:-34px;bottom:-26px;width:34%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 28%;border:7px solid #F7F3EE;border-bottom-width:22px;border-radius:2px;transform:rotate(-5deg);box-shadow:0 16px 36px rgba(0,0,0,.55)}
+.hero-foto .extra{position:absolute;left:-15%;top:30%;width:36%;height:auto;aspect-ratio:4/5;object-fit:cover;border:7px solid #F7F3EE;border-bottom-width:22px;border-radius:2px;transform:rotate(-6deg);box-shadow:0 16px 36px rgba(0,0,0,.55);z-index:2}
+.hero-foto .dono{position:absolute;z-index:3;right:-34px;bottom:-26px;width:34%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 28%;border:7px solid #F7F3EE;border-bottom-width:22px;border-radius:2px;transform:rotate(-5deg);box-shadow:0 16px 36px rgba(0,0,0,.55)}
 .hero-foto .ficha{position:absolute;left:-28px;bottom:28px;background:var(--papel);color:var(--tinta);padding:14px 18px;border-radius:3px;font-family:var(--marca);font-size:13px;letter-spacing:.12em;box-shadow:0 12px 30px rgba(0,0,0,.35)}
 .hero-foto .ficha b{display:block;font-family:var(--display);font-size:22px;letter-spacing:0;font-weight:400}
 
@@ -156,6 +157,7 @@ footer a{color:#d6d1ca;text-decoration:none}
   .hero-foto{padding:6px 4px 0;max-width:520px;margin-inline:auto;width:100%}
   .hero-foto .proj{aspect-ratio:4/4.4;object-position:50% 45%;border-width:8px;border-bottom-width:26px}
   .hero-foto .dono{right:-4px;bottom:-24px;width:36%;border-width:5px;border-bottom-width:16px}
+  .hero-foto .extra{left:-4px;width:38%;border-width:5px;border-bottom-width:16px}
   .hero .wrap{padding-bottom:64px}
   .mosaico{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-20px;padding:0 20px 6px;scroll-padding-inline:20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .mosaico::-webkit-scrollbar{display:none}
@@ -198,10 +200,14 @@ footer a{color:#d6d1ca;text-decoration:none}
   .hero .wrap{display:flex;flex-direction:column;width:100%;min-height:calc(100svh - 61px)}
   .hero-foto{flex:1 1 0;min-height:230px;max-width:none;margin:0;padding:4px 0 0;display:flex;justify-content:center}
   .moldura{height:100%;aspect-ratio:4/5.2;max-width:100%}
+  .hero-foto{max-height:82vw}
   .hero-foto .proj{width:100%;height:100%;aspect-ratio:auto;object-fit:cover;border-width:6px;border-bottom-width:18px}
   .hero-foto .dono{width:46%;right:-30%;bottom:-6px;border-width:4px;border-bottom-width:12px}
+  .hero-foto .extra{width:50%;left:-30%;top:10%;border-width:4px;border-bottom-width:12px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:380px){.selos{font-size:11.5px;gap:4px 10px}.hero-foto .extra{width:46%;left:-26%}.hero-foto .dono{width:42%;right:-24%}}
+@media (min-width:400px) and (max-width:480px){.hero-foto .extra{width:46%;left:-20%}.hero-foto .dono{width:40%;right:-18%}}
 </style>
 </head>
 <body>
@@ -243,6 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-foto">
 <div class="moldura">
                   <img class="proj" src="hero-roupeiro.jpg" alt="Roupeiro planejado branco com portas em palhinha" width="1280" height="1600" fetchpriority="high" decoding="async">
+          <img class="extra" src="hero-canto.jpg" alt="Canto alemão planejado com banco estofado, ripado e LED" width="1040" height="1300" decoding="async">
           <img class="dono" src="casal.jpg" alt="Deivid e a esposa, donos da GREG - Móveis" width="600" height="600" decoding="async">
         </div>
       </div>
