@@ -11,8 +11,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NNZQSFR2');</script>
 <!-- End Google Tag Manager -->
-<title>GREG Móveis</title>
-<meta name="description" content="Móveis planejados, marmoraria, pintura e drywall em Cuiabá e Várzea Grande. Empresa familiar com fabricação própria.">
+<title>GREG - Móveis · Móveis planejados em Cuiabá e Várzea Grande</title>
+<meta name="description" content="Móveis planejados em Cuiabá e Várzea Grande, do primeiro ambiente ao ponto comercial. Empresa familiar com fabricação e instalação próprias.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap">
 <style>
@@ -64,19 +64,27 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 
 /* régua de marceneiro */
 .regua{height:18px;background:url(madeira.jpg) center/cover}
-.serv{background:var(--papel)}
-.serv .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
-.serv article{background:#fff;padding:26px 24px;border-radius:3px}
-.serv article i{display:block;width:44px;height:6px;background:url(madeira.jpg) center/cover;margin-bottom:18px}
-.serv h3{font-size:21px;margin-bottom:8px}.serv p{margin:0;color:#5a5754;font-size:15.5px}
-@media (max-width:860px){.serv .grid{grid-template-columns:1fr 1fr}}
+/* do compacto ao comercial */
+.escala{background:var(--papel)}
+.escala h2{max-width:22ch;margin-bottom:12px}
+.escala .sub{color:#5a5754;max-width:56ch;margin:0 0 36px}
+.escala .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.escala article{background:#fff;border-radius:3px;overflow:hidden;display:flex;flex-direction:column}
+.escala article img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.escala article div{padding:20px 20px 24px}
+.escala article i{display:block;width:44px;height:6px;background:url(madeira.jpg) center/cover;margin-bottom:14px}
+.escala h3{font-size:20px;margin-bottom:6px}.escala p{margin:0;color:#5a5754;font-size:15px}
+.escala .cta{margin-top:36px;display:flex;justify-content:center}
+@media (max-width:860px){.escala .grid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.escala .grid{gap:10px}.escala article div{padding:14px 14px 18px}.escala h3{font-size:17px}.escala p{font-size:14px}}
 
 section{padding-block:88px}
 /* família */
 .familia .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
 .familia .fotos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.familia .fotos img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:3px}
-.familia .fotos img:last-child{margin-top:48px}
+.familia .fotos img{width:100%;object-fit:cover;border-radius:3px}
+.familia .fotos img:first-child{grid-column:span 2;aspect-ratio:16/10}
+.familia .fotos img:not(:first-child){aspect-ratio:4/3}
 .familia p{max-width:58ch;color:#4a4744}
 .familia h2{margin-bottom:22px}
 .assina{margin-top:26px;font-family:var(--marca);letter-spacing:.14em;font-size:14px;color:var(--madeira)}
@@ -95,6 +103,7 @@ section{padding-block:88px}
 /* projetos */
 .proj h2{margin-bottom:36px}
 .mosaico{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:210px;gap:12px}
+.m5,.m6,.m7{grid-column:span 2;grid-row:span 2}
 .mosaico figure{margin:0;position:relative;overflow:hidden;border-radius:3px;background:#ddd}
 .mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .mosaico figure:hover img{transform:scale(1.03)}
@@ -140,7 +149,7 @@ footer a{color:#d6d1ca;text-decoration:none}
   .grade4{grid-template-columns:1fr 1fr}
   .grade4 article{border-right:0;margin-right:0;padding-right:12px;border-bottom:1px solid #3a3835;padding-bottom:24px}
   .mosaico{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
-  .m1,.m2{grid-column:span 2;grid-row:span 2}.m3,.m4{grid-column:span 1;grid-row:span 2}
+  .m1,.m2{grid-column:span 2;grid-row:span 2}.m3,.m4,.m5,.m6{grid-column:span 1;grid-row:span 2}.m7{grid-column:span 2;grid-row:span 2}
   .proc img{position:static;aspect-ratio:4/3}
   section{padding-block:64px}
   .topo .btn-sm{display:none}
@@ -149,7 +158,6 @@ footer a{color:#d6d1ca;text-decoration:none}
 }
 @media (max-width:480px){
   .grade4{grid-template-columns:1fr}
-  .familia .fotos img:last-child{margin-top:28px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
@@ -162,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="topo">
   <div class="wrap">
-    <a class="marca" href="#inicio" aria-label="GREG Móveis">
+    <a class="marca" href="#inicio" aria-label="GREG - Móveis">
       <img src="greg-simbolo.png" alt="">
       <span><b>GREG</b><small>MÓVEIS</small></span>
     </a>
@@ -179,19 +187,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <p class="eyebrow" style="color:var(--ouro)">Cuiabá e Várzea Grande</p>
         <h1>Da nossa família <em>para a sua.</em></h1>
-        <p class="lead">Móveis planejados, marmoraria, pintura e drywall com acabamento rigoroso e o cuidado de quem trata cada casa como única.</p>
+        <p class="lead">Móveis planejados do primeiro ambiente do imóvel ao ponto comercial completo. Projeto, fabricação e instalação com equipe própria, segurança e agilidade.</p>
         <a class="btn btn-wa" data-origem="site_hero" href="#">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
           Solicitar orçamento
         </a>
         <ul class="selos">
-          <li>Projeto 3D sob medida</li>
-          <li>Materiais selecionados</li>
-          <li>Acabamento revisado peça a peça</li>
+          <li>Mais de 15 anos em Cuiabá</li>
+          <li>Projeto 3D antes da produção</li>
+          <li>Fabricação e instalação próprias</li>
         </ul>
       </div>
       <div class="hero-foto">
-        <img src="casal.jpg" alt="Deivid e a esposa na fábrica da GREG, com uniforme da empresa">
+        <img src="casal.jpg" alt="Deivid e a esposa na fábrica da GREG - Móveis, com uniforme da empresa">
         <div class="ficha">FABRICAÇÃO PRÓPRIA<b>do projeto à entrega</b></div>
       </div>
     </div>
@@ -199,32 +207,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="regua" aria-hidden="true"></div>
 
-  <section class="familia">
+  <section class="escala" id="projetos-sob-medida">
     <div class="wrap">
-      <div class="fotos">
-        <img src="equipe.jpg" alt="Equipe GREG montando armários">
-        <img src="obra.jpg" alt="Família GREG instalando ripado em obra">
+      <p class="eyebrow">Do primeiro ambiente ao ponto comercial</p>
+      <h2>O mesmo cuidado em qualquer tamanho de projeto.</h2>
+      <p class="sub">Um único ambiente ou uma empresa inteira: mesmo projeto em 3D, mesma fabricação própria e mesma equipe na instalação.</p>
+      <div class="grid">
+        <article><img src="p-compacto.jpg" alt="Cozinha planejada em apartamento" loading="lazy"><div><i></i><h3>Ambientes compactos</h3><p>Cozinhas, quartos e áreas de serviço com cada centímetro aproveitado.</p></div></article>
+        <article><img src="p-cozinha.jpg" alt="Cozinha planejada completa com torre de fornos" loading="lazy"><div><i></i><h3>Casa completa</h3><p>Cozinha, dormitórios, closet e sala no mesmo projeto.</p></div></article>
+        <article><img src="p-escritorio.jpg" alt="Sala de reunião planejada com painel amadeirado" loading="lazy"><div><i></i><h3>Escritórios</h3><p>Mesas, armários e painéis para escritórios e consultórios.</p></div></article>
+        <article><img src="p-hospital.jpg" alt="Revestimento planejado em quarto de hospital" loading="lazy"><div><i></i><h3>Comercial e institucional</h3><p>Lojas, clínicas, hospitais e indústrias.</p></div></article>
       </div>
-      <div>
-        <p class="eyebrow">Nossa história</p>
-        <h2>Uma empresa familiar, construída sobre relações de confiança.</h2>
-        <p>A GREG nasceu do trabalho em família e cresceu pela indicação de clientes satisfeitos. Cada projeto é acompanhado de perto, da primeira conversa à entrega final.</p>
-        <p>Durante a instalação, o ambiente do cliente recebe o mesmo respeito que dedicamos ao nosso próprio lar: organização, proteção e limpeza em todas as etapas.</p>
-        <p>A especificação de materiais prioriza a durabilidade. Sempre que o projeto permite, são adotadas soluções superiores às previstas em orçamento.</p>
-        <p class="assina">FAMÍLIA GREG</p>
+      <div class="cta">
+        <a class="btn btn-wa" data-origem="site_tamanhos" href="#">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+          Enviar meu projeto
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="serv">
+  <section class="familia">
     <div class="wrap">
-      <p class="eyebrow">Soluções completas</p>
-      <h2>Da estrutura ao acabamento.</h2>
-      <div class="grid">
-        <article><i></i><h3>Móveis planejados</h3><p>Cozinhas, dormitórios, salas e ambientes comerciais sob medida.</p></article>
-        <article><i></i><h3>Marmoraria</h3><p>Bancadas, soleiras e peças em mármore e granito.</p></article>
-        <article><i></i><h3>Pintura</h3><p>Preparação e acabamento de paredes e tetos.</p></article>
-        <article><i></i><h3>Drywall</h3><p>Paredes, forros e sancas com instalação completa.</p></article>
+      <div class="fotos">
+        <img src="familia.jpg" alt="Família GREG - Móveis reunida na fábrica" loading="lazy">
+        <img src="equipe.jpg" alt="Equipe GREG - Móveis montando armários" loading="lazy">
+        <img src="fabrica.jpg" alt="Fábrica da GREG - Móveis em Cuiabá" loading="lazy">
+      </div>
+      <div>
+        <p class="eyebrow">De família para família</p>
+        <h2>Uma empresa familiar, construída sobre relações de confiança.</h2>
+        <p>A GREG - Móveis nasceu do trabalho em família e cresceu pela indicação de clientes satisfeitos. São mais de 15 anos em Cuiabá, com cada projeto acompanhado de perto, da primeira conversa à entrega final.</p>
+        <p>Durante a instalação, o ambiente do cliente recebe o mesmo respeito que dedicamos ao nosso próprio lar: organização, proteção e limpeza em todas as etapas.</p>
+        <p>Com fabricação própria, prazo e qualidade ficam sob o nosso controle, sem depender de terceiros. Sempre que o projeto permite, são adotadas soluções superiores às previstas em orçamento.</p>
+        <p class="assina">FAMÍLIA GREG</p>
       </div>
     </div>
   </section>
@@ -236,13 +252,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="grade4">
         <article>
           <svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 15 16 5l12 10v12H4z"/><path d="M13 27v-7h6v7"/></svg>
-          <h3>Respeito ao seu lar</h3>
-          <p>Ambientes protegidos, equipe organizada e limpeza ao fim de cada etapa.</p>
+          <h3>Segurança</h3>
+          <p>Equipe própria, ambiente protegido e limpeza ao fim de cada etapa da instalação.</p>
         </article>
         <article>
-          <svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="7" width="22" height="18" rx="1"/><path d="M5 13h22M5 19h22"/></svg>
-          <h3>Materiais superiores</h3>
-          <p>Chapas e ferragens selecionadas para o uso diário por muitos anos.</p>
+          <svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="16" cy="17" r="10"/><path d="M16 11v6l4 3M13 4h6"/></svg>
+          <h3>Agilidade</h3>
+          <p>Fabricação própria e cronograma combinado antes do início da produção.</p>
         </article>
         <article>
           <svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 22h24M8 22v-4M12 22v-7M16 22v-4M20 22v-7M24 22v-4"/></svg>
@@ -251,8 +267,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </article>
         <article>
           <svg class="ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="4"/><circle cx="22" cy="12" r="3"/><path d="M4 26c0-4 3-7 7-7s7 3 7 7M17 26c.5-3 2.5-5 5-5s4.5 2 5 5"/></svg>
-          <h3>Atendimento próximo</h3>
-          <p>Comunicação direta e acompanhamento em todas as fases do projeto.</p>
+          <h3>Atendimento de família</h3>
+          <p>Contato direto com quem projeta e fabrica, do orçamento à entrega.</p>
         </article>
       </div>
     </div>
@@ -261,19 +277,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="proj">
     <div class="wrap">
       <p class="eyebrow">Projetos entregues</p>
-      <h2>Projetos que traduzem a rotina de cada família.</h2>
+      <h2>Projetos que traduzem a rotina de cada família e de cada empresa.</h2>
       <div class="mosaico">
-        <figure class="m1"><img src="ripado.jpg" alt="Painel ripado com LED e rack suspenso"><figcaption>SALA · RIPADO COM LED</figcaption></figure>
-        <figure class="m2"><img src="cozinha.jpg" alt="Cozinha planejada grafite com iluminação no ripado"><figcaption>COZINHA</figcaption></figure>
-        <figure class="m3"><img src="painel.jpg" alt="Painel de TV amadeirado com ripas iluminadas"><figcaption>PAINEL DE TV</figcaption></figure>
-        <figure class="m4"><img src="canto.jpg" alt="Canto alemão com bancos estofados e ripado"><figcaption>CANTO ALEMÃO</figcaption></figure>
+        <figure class="m1"><img src="ripado.jpg" alt="Painel ripado com LED e rack suspenso" loading="lazy"><figcaption>SALA · RIPADO COM LED</figcaption></figure>
+        <figure class="m2"><img src="cozinha.jpg" alt="Cozinha planejada grafite com iluminação no ripado" loading="lazy"><figcaption>COZINHA</figcaption></figure>
+        <figure class="m3"><img src="p-roupeiro.jpg" alt="Roupeiro planejado branco com portas em palhinha" loading="lazy"><figcaption>ROUPEIRO</figcaption></figure>
+        <figure class="m4"><img src="canto.jpg" alt="Canto alemão com bancos estofados e ripado" loading="lazy"><figcaption>CANTO ALEMÃO</figcaption></figure>
+        <figure class="m5"><img src="p-cozinha2.jpg" alt="Cozinha planejada grafite e amarela" loading="lazy"><figcaption>COZINHA</figcaption></figure>
+        <figure class="m6"><img src="p-empresa.jpg" alt="Balcão de atendimento planejado em empresa" loading="lazy"><figcaption>EMPRESA</figcaption></figure>
+        <figure class="m7"><img src="painel.jpg" alt="Painel de TV amadeirado com ripas iluminadas" loading="lazy"><figcaption>PAINEL DE TV</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="proc">
     <div class="wrap">
-      <img src="escritorio.jpg" alt="Deivid apresentando projeto 3D no escritório da GREG">
+      <img src="escritorio.jpg" alt="Deivid apresentando projeto 3D no escritório da GREG - Móveis" loading="lazy">
       <div>
         <p class="eyebrow">Como funciona</p>
         <h2>Do projeto à entrega.</h2>
@@ -293,9 +312,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="eyebrow">Perguntas</p>
       <h2>Perguntas frequentes</h2>
       <details><summary>Quais cidades vocês atendem?</summary><p>Cuiabá e Várzea Grande, em casa, apartamento e ponto comercial.</p></details>
-      <details><summary>A instalação é terceirizada?</summary><p>Não. A instalação é realizada pela equipe própria da GREG.</p></details>
+      <details><summary>Vocês fazem projetos de um ambiente só?</summary><p>Sim. Um único ambiente recebe o mesmo projeto em 3D, a mesma fabricação e a mesma equipe de instalação de um imóvel completo.</p></details>
+      <details><summary>Atendem empresas e comércios?</summary><p>Sim. Lojas, escritórios, consultórios, clínicas, hospitais e indústrias, com o projeto pensado para a operação de cada espaço.</p></details>
+      <details><summary>A instalação é terceirizada?</summary><p>Não. A instalação é realizada pela equipe própria da GREG - Móveis.</p></details>
       <details><summary>Dá para ver o projeto antes?</summary><p>Sim. Todo ambiente é apresentado em 3D antes da fabricação, com ajustes até ficar do jeito certo.</p></details>
       <details><summary>Como solicitar um orçamento?</summary><p>Pelo WhatsApp, com os ambientes desejados e, se houver, fotos e planta do imóvel. A visita técnica é agendada no mesmo atendimento.</p></details>
+      <details><summary>Fazem outros serviços na obra?</summary><p>Conforme o projeto, marmoraria, pintura e drywall podem ser incluídos no mesmo atendimento.</p></details>
     </div>
   </section>
 
@@ -303,7 +325,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrap">
       <img class="gc" src="greg-simbolo.png" alt="">
       <h2>Vamos planejar o seu próximo ambiente?</h2>
-      <p>Atendimento personalizado em Cuiabá e Várzea Grande.</p>
+      <p>Envie fotos ou a planta do imóvel pelo WhatsApp. A visita técnica é agendada no mesmo atendimento.</p>
       <a class="btn btn-ouro" data-origem="site_final" href="#">Solicitar orçamento</a>
     </div>
   </section>
@@ -311,7 +333,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="wrap">
-    <span>GREG Móveis · Cuiabá e Várzea Grande · MT</span>
+    <span>GREG - Móveis · Cuiabá e Várzea Grande · MT</span>
     <span><a data-origem="site_rodape" href="#">(65) 99290-2284</a> · <a href="https://www.instagram.com/gregmoveis.mt/" target="_blank" rel="noopener">Instagram</a></span>
   </div>
 </footer>
