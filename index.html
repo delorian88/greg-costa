@@ -22,6 +22,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --display:"Montserrat",system-ui,sans-serif; --marca:"Montserrat",system-ui,sans-serif; --texto:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box}
+html{overflow-x:clip;overscroll-behavior-x:none}
+main,footer,section{overflow-x:clip}
+@supports not (overflow:clip){main,footer,section{overflow-x:hidden}}
 html{scroll-behavior:smooth}
 body{background:var(--papel);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.6;margin:0;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;overflow-x:clip}
 img{display:block;max-width:100%}
