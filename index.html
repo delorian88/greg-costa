@@ -159,7 +159,9 @@ footer a{color:#d6d1ca;text-decoration:none}
   .hero .wrap{padding-bottom:64px}
   .mosaico{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-20px;padding:0 20px 6px;scroll-padding-inline:20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .mosaico::-webkit-scrollbar{display:none}
-  .mosaico figure{flex:0 0 80%;aspect-ratio:4/5;scroll-snap-align:start}
+  .mosaico{align-items:center}
+  .mosaico figure{flex:0 0 auto;height:auto;aspect-ratio:auto;scroll-snap-align:start;background:none}
+  .mosaico img{width:auto;height:auto;max-height:340px;max-width:calc(100vw - 64px)}
   .proc img{position:static;aspect-ratio:16/10}
   section{padding-block:56px}
   .comp h2{margin-bottom:32px}
