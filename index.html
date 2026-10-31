@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--papel);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.6;margin:0}
+body{background:var(--papel);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.6;margin:0;-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
@@ -148,17 +148,35 @@ footer a{color:#d6d1ca;text-decoration:none}
   .hero-foto .ficha{left:12px;bottom:12px}
   .grade4{grid-template-columns:1fr 1fr}
   .grade4 article{border-right:0;margin-right:0;padding-right:12px;border-bottom:1px solid #3a3835;padding-bottom:24px}
-  .mosaico{grid-template-columns:1fr 1fr;grid-auto-rows:170px}
-  .m1,.m2{grid-column:span 2;grid-row:span 2}.m3,.m4,.m5,.m6{grid-column:span 1;grid-row:span 2}.m7{grid-column:span 2;grid-row:span 2}
-  .proc img{position:static;aspect-ratio:4/3}
-  section{padding-block:64px}
+  .hero-foto img{aspect-ratio:4/3;object-position:50% 30%}
+  .mosaico{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-20px;padding:0 20px 6px;scroll-padding-inline:20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .mosaico::-webkit-scrollbar{display:none}
+  .mosaico figure{flex:0 0 80%;aspect-ratio:4/5;scroll-snap-align:start}
+  .proc img{position:static;aspect-ratio:16/10}
+  section{padding-block:56px}
+  .comp h2{margin-bottom:32px}
   .topo .btn-sm{display:none}
-  .flutua{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 10px 28px rgba(0,0,0,.35)}
-  footer{padding-bottom:80px}
+  .flutua{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 10px 28px rgba(0,0,0,.35);transform:translateY(140%);opacity:0;pointer-events:none;transition:transform .25s ease,opacity .25s ease}
+  .flutua.on{transform:none;opacity:1;pointer-events:auto}
+  footer{padding-bottom:84px}
+  summary{font-size:19px;line-height:1.3;min-height:44px;align-items:center}
+  details{padding:16px 0}
+  .passos li{grid-template-columns:44px 1fr;gap:4px 14px}
+  .passos li::before{font-size:34px}
 }
 @media (max-width:480px){
+  body{font-size:16px}
+  .wrap{padding-inline:16px}
+  .mosaico{margin-inline:-16px;padding-inline:16px;scroll-padding-inline:16px}
   .grade4{grid-template-columns:1fr}
+  .grade4 article{padding-top:20px}
+  .grade4 h3{margin-top:10px}
+  .hero p.lead{font-size:17px}
+  .hero .btn,.escala .cta .btn{width:100%}
+  .selos{margin-top:22px}
+  .eyebrow{font-size:12px;letter-spacing:.18em}
 }
+@media (max-width:360px){.escala .grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -199,7 +217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
       <div class="hero-foto">
-        <img src="casal.jpg" alt="Deivid e a esposa na fábrica da GREG - Móveis, com uniforme da empresa">
+        <img src="casal.jpg" alt="Deivid e a esposa na fábrica da GREG - Móveis, com uniforme da empresa" fetchpriority="high" decoding="async">
         <div class="ficha">FABRICAÇÃO PRÓPRIA<b>do projeto à entrega</b></div>
       </div>
     </div>
@@ -339,6 +357,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <a class="btn btn-wa flutua" data-origem="site_flutuante" href="#">Solicitar orçamento</a>
+<script>
+(function(){
+  var f=document.querySelector('.flutua'),h=document.querySelector('.hero .btn'),z=document.querySelector('.final');
+  if(!f||!h||!('IntersectionObserver' in window)){f&&f.classList.add('on');return;}
+  var vh=true,vz=false;
+  function upd(){f.classList.toggle('on',!vh&&!vz);}
+  new IntersectionObserver(function(e){vh=e[0].isIntersecting;upd();}).observe(h);
+  if(z)new IntersectionObserver(function(e){vz=e[0].isIntersecting;upd();}).observe(z);
+})();
+</script>
 
 <script src="/app.js" defer></script>
 
