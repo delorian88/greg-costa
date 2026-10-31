@@ -39,7 +39,9 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 .marca img{width:36px;height:auto}
 .marca b{font-family:var(--marca);font-weight:800;font-size:22px;letter-spacing:.03em;display:block;line-height:1}
 .marca b i{font-style:normal;color:var(--ouro)}
-.marca small{font-family:var(--marca);font-weight:700;font-size:9.5px;letter-spacing:.2em;color:var(--ouro)}
+.marca span{display:flex;flex-direction:column;align-items:flex-start}
+.marca b{margin-right:-.03em}
+.marca small{display:block;font-family:var(--marca);font-weight:700;font-size:9.5px;line-height:1;letter-spacing:.515em;margin:5px -.515em 0 0;color:var(--ouro)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:700;text-decoration:none;padding:15px 26px;font-size:16px;transition:transform .15s ease,background .15s}
 .btn svg{width:20px;height:20px;flex:none}
 .btn-wa{background:var(--wa);color:#fff}
@@ -59,8 +61,8 @@ h2{font-size:clamp(30px,4.4vw,46px)}
 .selos li::before{content:"";width:8px;height:8px;background:var(--ouro);transform:rotate(45deg)}
 .hero-foto{position:relative}
 .hero-foto{padding:10px 6px 0}
-.hero-foto .proj{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:10px solid #F7F3EE;border-bottom-width:34px;border-radius:2px;transform:rotate(-1.5deg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
-.hero-foto .dono{position:absolute;left:-34px;bottom:-26px;width:34%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 28%;border:7px solid #F7F3EE;border-bottom-width:22px;border-radius:2px;transform:rotate(5deg);box-shadow:0 16px 36px rgba(0,0,0,.55)}
+.hero-foto .proj{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border:10px solid #F7F3EE;border-bottom-width:34px;border-radius:2px;transform:rotate(1.5deg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.hero-foto .dono{position:absolute;right:-34px;bottom:-26px;width:34%;height:auto;aspect-ratio:1;object-fit:cover;object-position:50% 28%;border:7px solid #F7F3EE;border-bottom-width:22px;border-radius:2px;transform:rotate(-5deg);box-shadow:0 16px 36px rgba(0,0,0,.55)}
 .hero-foto .ficha{position:absolute;left:-28px;bottom:28px;background:var(--papel);color:var(--tinta);padding:14px 18px;border-radius:3px;font-family:var(--marca);font-size:13px;letter-spacing:.12em;box-shadow:0 12px 30px rgba(0,0,0,.35)}
 .hero-foto .ficha b{display:block;font-family:var(--display);font-size:22px;letter-spacing:0;font-weight:400}
 
@@ -151,8 +153,8 @@ footer a{color:#d6d1ca;text-decoration:none}
   .grade4{grid-template-columns:1fr 1fr}
   .grade4 article{border-right:0;margin-right:0;padding-right:12px;border-bottom:1px solid #3a3835;padding-bottom:24px}
   .hero-foto{padding:6px 4px 0;max-width:520px;margin-inline:auto;width:100%}
-  .hero-foto .proj{aspect-ratio:4/4.4;object-position:50% 50%;border-width:8px;border-bottom-width:26px}
-  .hero-foto .dono{left:-4px;bottom:-24px;width:36%;border-width:5px;border-bottom-width:16px}
+  .hero-foto .proj{aspect-ratio:4/4.4;object-position:50% 45%;border-width:8px;border-bottom-width:26px}
+  .hero-foto .dono{right:-4px;bottom:-24px;width:36%;border-width:5px;border-bottom-width:16px}
   .hero .wrap{padding-bottom:64px}
   .mosaico{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-20px;padding:0 20px 6px;scroll-padding-inline:20px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .mosaico::-webkit-scrollbar{display:none}
@@ -222,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </div>
       <div class="hero-foto">
-        <img class="proj" src="hero-projeto.jpg" alt="Painel de TV ripado com LED e rack planejado" width="1036" height="1295" fetchpriority="high" decoding="async">
+        <img class="proj" src="hero-canto.jpg" alt="Canto alemão planejado com banco estofado, ripado e LED" width="1040" height="1300" fetchpriority="high" decoding="async">
         <img class="dono" src="casal.jpg" alt="Deivid e a esposa, donos da GREG - Móveis" width="600" height="600" decoding="async">
       </div>
     </div>
